@@ -1,0 +1,37 @@
+body {
+  // background-image: image_url('yellow-autumn.jpeg');
+  // background-image: image_url('autumn-rale.jpg');
+  background-image: image_url('autumn-picture.jpg');
+  // background-image: image_url('autumn-red.jpeg');
+  background-size: cover;
+}
+
+.header {
+  height: 100px;
+  // background-color: palegreen;
+}
+
+.article{
+  min-height: calc(100vh - 200px);
+  display: flex;
+}
+
+.sidebar{
+  width: 200px;
+  // background-color: rgb(240, 248, 255);
+}
+
+.main {
+  flex: 1;
+  &_title{
+    text-align: center;
+    font-size: 75px;
+    margin-right: 200px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  // background-color: palegoldenrod;
+}
