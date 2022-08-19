@@ -1,14 +1,74 @@
 body {
+  box-sizing: border-box;
   // background-image: image_url('yellow-autumn.jpeg');
   // background-image: image_url('autumn-rale.jpg');
   background-image: image_url('autumn-picture.jpg');
   // background-image: image_url('autumn-red.jpeg');
   background-size: cover;
+  margin: 0;
 }
+// common
 
 .header {
   height: 100px;
-  // background-color: palegreen;
+  display: flex;
+  &-left {
+    // background-color: palegreen;
+    min-width: 200px;
+    line-height: 100px;
+    margin:20px 10px;
+    display: flex;
+    &-logo{
+    cursor: pointer;
+  }
+    &-logo:hover {
+      opacity: 0.7;
+      font-weight: bold;
+    }
+    &-title {
+    flex: 1;
+    line-height: 60px;
+    margin-left: 30px;
+    color: #f56500;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+   }
+    &-title:hover {
+      opacity: 0.7;
+      font-weight: bold;
+    }
+  }
+  &-middle {
+    // background-color: rgb(65, 207, 65);
+    flex: 1;
+    line-height: 100px;
+  }
+  &-right {
+    // background-color: rgb(6, 219, 6);
+    min-width: 300px;
+    display: flex;
+    &-cell {
+      min-width: 150px;
+      text-align: center;
+      margin: 20px 10px;
+      font-size: 18px;
+      height: 50px;
+      line-height: 50px;
+      background: #f56500;
+      // background-color: #239b76;
+      border-radius: 5px;
+      cursor: pointer;
+     }
+     &-cell:hover {
+      opacity: 0.7;
+      font-weight: bold;
+     }
+     &-cell a{
+      color: whitesmoke;
+      text-decoration: none;
+     }
+  }
 }
 
 .article{
