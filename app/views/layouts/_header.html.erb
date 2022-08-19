@@ -1,3 +1,15 @@
 <header class="header" >
-  header
+  <div class="header-left" >
+    <%= link_to image_tag("icons8-kaede.png", alt:"logo", width: "60px", class: "header-left-logo"), root_url %>
+    <%= link_to "Fall Blog", root_url, class: "header-left-title"%>
+  </div>
+  <div class="header-middle" >
+    <input type="text" size="50" placeholder="キーワード検索">
+  　<input type="submit" value="ダミー">
+  </div>
+  <div class="header-right" >
+    <div class="header-right-cell "> <%= link_to "ログイン", "#" %> </div>
+    <div class="header-right-cell "> <%= link_to "新規登録", "#" %> </div>
+
+  </div>
 </header>
