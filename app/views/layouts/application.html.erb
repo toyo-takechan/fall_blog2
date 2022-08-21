@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FallBlog2 <%= yield(:title) %></title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= favicon_link_tag('favicon.ico') %>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
