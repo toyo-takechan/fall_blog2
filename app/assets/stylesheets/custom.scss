@@ -1,5 +1,9 @@
 body {
   box-sizing: border-box;
+
+  // 背景を変更したいがうまくいかないコード
+  // background-image: image_url(yield(:background));
+
   // background-image: image_url('yellow-autumn.jpeg');
   // background-image: image_url('autumn-rale.jpg');
   background-image: image_url('autumn-picture.jpg');
