@@ -1,6 +1,7 @@
 <div class="form" >
   <h1 class="form_h1">新規登録フォーム</h1>
     <%= form_with(model: @user, local: true) do |f| %>
+    <%= render 'shared/error_messages' %>
 
     <%= f.label :name, class: "form_label" %>
     <%= f.text_field :name, class: "form_control" %>

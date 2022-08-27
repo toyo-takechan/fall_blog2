@@ -12,6 +12,7 @@ body {
   margin: 0;
 }
 // common
+// ボタン
 .mini_button {
   min-width: 150px;
   text-align: center;
@@ -32,7 +33,26 @@ body {
 a.mini_button{
   text-decoration: none;
 }
-
+// エラー
+.errors {
+  color: red;
+  &_ul{
+    // list-style: none;
+  }
+}
+// フラッシュ
+.notice {
+  border: 2px slid;
+  text-align: center;
+  &-success {
+    background-color: #9df;
+    color: #00f;
+  }
+  &-danger {
+    background-color: #fcc;
+    color: #f00;
+  }
+}
 .header {
   height: 100px;
   display: flex;
@@ -117,6 +137,13 @@ a.mini_button{
     margin-left: 10%;
     margin-right: 20%;
     font-size: 24px;
+    &_h1{
+      margin-bottom: 20px;
+    }
+    &_h1 a{
+      text-decoration: none;
+      color: #212121;
+    }
   }
 }
 
