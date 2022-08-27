@@ -117,6 +117,13 @@ a.mini_button{
     margin-left: 10%;
     margin-right: 20%;
     font-size: 24px;
+    &_h1{
+      margin-bottom: 20px;
+    }
+    &_h1 a{
+      text-decoration: none;
+      color: #212121;
+    }
   }
 }
 

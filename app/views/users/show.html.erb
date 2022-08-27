@@ -1,4 +1,6 @@
+<% provide(:title, @user.name) %>
 <div class="main_div" >
-<p>ここは　<%= @user.name %>さんの　ページです。<br>
-<%= link_to "プロフィール更新", edit_user_path, class:"mini_button" %></p>
+<h1 class="main_div_h1"><%= image_tag @user.gravatar_url %>
+ <%= link_to @user.name, edit_user_path %>さんのページ</h1>
+<%= link_to "プロフィール更新", edit_user_path, class:"mini_button" %>
 </div>
