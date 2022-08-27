@@ -1,0 +1,21 @@
+<div class="form" >
+  <h1 class="form_h1">プロフィール更新</h1>
+    <%= form_with(model: @user, local: true) do |f| %>
+    <%= render 'shared/error_messages' %>
+
+    <%= f.label :name, class: "form_label" %>
+    <%= f.text_field :name, class: "form_control" %>
+
+    <%= f.label :email, class: "form_label" %>
+    <%= f.email_field :email, class: "form_control" %>
+
+    <%= f.label :password, class: "form_label" %>
+    <%= f.password_field :password, class: "form_control" %>
+
+    <%= f.label :password_confirmation, "confirmation", class: "form_label" %>
+    <%= f.password_field :password_confirmation, class: "form_control" %>
+
+    <%= f.submit "更新する", class: "form_button" %>
+    <% end %>
+
+</div>
