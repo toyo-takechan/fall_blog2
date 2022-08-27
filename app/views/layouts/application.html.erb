@@ -18,6 +18,9 @@
     <div class="article" >
       <%= render 'layouts/sidebar' %>
       <div class="main">
+        <% flash.each do |message_type, message| %>
+          <div class="notice notice-<%= message_type %>"><%= message %></div>
+        <% end %>
         <%= yield %>
       </div>
     </div>
