@@ -8,7 +8,11 @@
   　<input type="submit" value="ダミー">
   </div>
   <div class="header-right" >
+    <% if logged_in? %>
+    <div class="header-right-cell "> <%= link_to "ログアウト", logout_path, data:{turbo_method: :delete }%> </div>
+    <% else %>
     <div class="header-right-cell "> <%= link_to "ログイン", login_path %> </div>
+    <% end %>
     <div class="header-right-cell "> <%= link_to "新規登録", signup_path %> </div>
 
   </div>
