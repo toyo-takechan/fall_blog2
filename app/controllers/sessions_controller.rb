@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     log_in user
     redirect_to user
    else
-    flash.now(:danger) = "email か　password が正しくありません。"
+    flash.now[:danger] = "emailかpassword が正しくありません。"
     render 'new', status: :unprocessable_entity
    end
   end
