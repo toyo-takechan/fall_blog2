@@ -1,8 +1,7 @@
 <% provide(:title, "全てのユーザー") %>
 <div class="main_div" >
   <ul class="main_div_ul">
-    <% @users.each do |user| %>
-      <li class="main_div_li"><%= image_tag user.gravatar_url, :size=>50 %><%=" "%><%=link_to user.name, user_path(user) %></li>
-    <% end %>
+    <%= render @users %>
   </ul>
+  <%= paginate @users %>
 </div>
