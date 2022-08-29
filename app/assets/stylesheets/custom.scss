@@ -52,6 +52,7 @@ a.mini_button{
     background-color: #fcc;
     color: #f00;
   }
+
 }
 .header {
   height: 100px;
@@ -143,6 +144,15 @@ a.mini_button{
     &_h1 a{
       text-decoration: none;
       color: #212121;
+    }
+    &_ul {
+      list-style: none;
+    }
+    &_li {
+      padding-bottom: 40px;
+    }
+    &_li a{
+      text-decoration: none;
     }
   }
 }
