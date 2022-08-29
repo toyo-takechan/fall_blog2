@@ -3,7 +3,7 @@
 <h1 class="main_div_h1"><%= image_tag @user.gravatar_url %>
  <%= link_to @user.name, edit_user_path %>さんのページ</h1>
 <%= link_to "プロフィール更新", edit_user_path, class:"mini_button" %>
-<%= link_to "プロフィール削除", user_path(@user),data: {
+<%# <%= link_to "プロフィール削除", user_path(@user),data: {
                                                 turbo_method: :delete,
                                                 turbo_confirm: "Are you sure?"}, class:"mini_button" %>
 </div>

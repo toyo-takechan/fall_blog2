@@ -28,6 +28,8 @@ gem "jbuilder"
 # gem "redis", "~> 4.0"
 
 gem 'gravtastic'
+gem 'kaminari'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
