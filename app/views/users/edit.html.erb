@@ -18,4 +18,9 @@
     <%= f.submit "更新する", class: "form_button" %>
     <% end %>
 
+    <div class="gravatar_edit>
+      <%= image_tag @user.gravatar_url %>
+      <a href="https://gravatar.com/emails" target="_blank">Change</a>
+    </div>
+
 </div>
