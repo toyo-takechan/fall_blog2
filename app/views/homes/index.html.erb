@@ -6,4 +6,5 @@
   <%= render 'microposts/new' %>
 <% else %>
   <%= image_tag 'cute-portrait.jpeg', alt:"logo", class:"main_image" %>
+  <div class="header-right-cell "> <%= link_to "新規登録", signup_path %> </div>
 <% end %>

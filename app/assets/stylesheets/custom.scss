@@ -138,6 +138,9 @@ a.mini_button{
     margin-left: 10%;
     margin-right: 20%;
     font-size: 24px;
+    &_microposts {
+      padding: 0;
+    }
     &_h1{
       margin-bottom: 20px;
     }
