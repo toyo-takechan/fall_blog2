@@ -1,0 +1,12 @@
+<div class="form" >
+  <h1 class="form_h1">新規投稿</h1>
+    <%= form_with(model: @micropost, local: true) do |f| %>
+    <%# <%= render 'shared/error_messages' %>
+
+    <%= f.label :content, class: "form_label" %>
+    <%= f.text_area :content, class: "form_control" %>
+
+    <%= f.submit "投稿", class: "form_button" %>
+    <% end %>
+
+</div>

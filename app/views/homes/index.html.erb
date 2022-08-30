@@ -2,3 +2,8 @@
 <%# 背景を変更したいがうまくいかないコード %>
 <%# <%= provide(:background, 'autumn-red.jpeg') %>
 <h1 class="main_title">Fall Blog</h1>
+<% if logged_in? %>
+  <%= render 'microposts/new' %>
+<% else %>
+  <%= image_tag 'cute-portrait.jpeg', alt:"logo", class:"main_image" %>
+<% end %>
