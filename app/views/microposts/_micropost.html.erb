@@ -1,8 +1,22 @@
 <ol class="main_div_li">
   <li id="micropost-<%= micropost.id %>">
   <%# <span class="main_div_user"><%= link_to micropost.user.name, micropost.user %>
-  <div class="main_div_content"><%= micropost.content %></div>
+  <div class="main_div_content">
+  <%= micropost.content %>
+  </div>
+
+  <div class="main_div_content">
+  <%= image_tag micropost.image if micropost.image.attached? %>
+  <%# <%= image_tag micropost.image.variant( resize: "300 * 200>") if micropost.image.attached? %>
+  <%# <%= image_tag micropost.image.variant( resize: "800x600>" ) if micropost.image.attached? %>
+  </div>
+
   <span class="main_div_timestamp">
     Posted  <%= time_ago_in_words(micropost.created_at)%>  ago
+    <% if current_user?(micropost.user) %>
+    <%= link_to "削除", micropost, data: {
+				                               turbo_method: :delete ,
+				                               turbo_confirm: "Are you sure?" } %>
+    <% end %>
   </span>
 </ol>
