@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
+  # root    "microposts#new"
   root     "homes#index"
   get      '/about' ,   to: 'homes#about'
   get      '/practice', to: 'homes#practice'
@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   post     '/login',    to: 'sessions#create'
   delete   '/logout',   to: 'sessions#destroy'
   resources :users
+  resources :microposts, only: [:create, :destroy]
 end
