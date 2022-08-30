@@ -7,3 +7,12 @@
                                                 turbo_method: :delete,
                                                 turbo_confirm: "Are you sure?"}, class:"mini_button" %>
 </div>
+<div class="main_div">
+  <% if @user.microposts.any? %>
+    <h3>投稿数(<%= @user.microposts.count %>)</h3>
+    <ol class="main_div_microposts">
+      <%= render @microposts %>
+    </ol>
+  <% end %>
+   <%= paginate @microposts %>
+</div>

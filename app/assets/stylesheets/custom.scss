@@ -154,9 +154,16 @@ a.mini_button{
     &_li a{
       text-decoration: none;
     }
+    &_content {
+      border-bottom: 1px solid gray;
+      min-height: 150px;
+    }
+    &_timestamp {
+      color: #f56500;
+      font-size: 16px;
+    }
   }
 }
-
 // ここからform
 .form {
   margin-top: 30px;
