@@ -6,6 +6,25 @@ User.create!(name: "Example User",
               admin: true,
               activated: true,
               activated_at: Time.zone.now)
+#動作チェック用のユーザーを作成する。
+User.create!(name: "Test User",
+              email: "test@fallblog.org",
+              password:              "testtest",
+              password_confirmation: "testtest",
+              activated: true,
+              activated_at: Time.zone.now)
+User.create!(name: "Keshiki User",
+              email: "keshiki@fallblog.org",
+              password:               "keshiki",
+              password_confirmation:  "keshiki",
+              activated: true,
+              activated_at: Time.zone.now)
+User.create!(name: "kaiga User",
+              email: "kaiga@fallblog.org",
+              password:                "kaigakaiga",
+              password_confirmation:    "kaigakaiga",
+              activated: true,
+              activated_at: Time.zone.now)
 
 # 追加のユーザーをまとめて生成する
 21.times do |n|
