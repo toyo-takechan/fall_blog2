@@ -13,7 +13,7 @@ class MicropostsController < ApplicationController
       flash[:success] = "投稿に成功しました。"
       redirect_to user_path(current_user)
     else
-      render 'home/index', status: :unprocessable_entity
+      render 'homes/index', status: :unprocessable_entity
     #   render :new, status: :unprocessable_entity
     end
 
