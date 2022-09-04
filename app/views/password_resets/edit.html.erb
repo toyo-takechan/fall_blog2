@@ -1,2 +1,21 @@
-<h1>PasswordResets#edit</h1>
-<p>Find me in app/views/password_resets/edit.html.erb</p>
+<% provide(:tite, 'PasswordReset')%>
+
+<div class ="form" >
+ <div class ="form_h1">パスワード再設定</div>
+
+<%= form_with(model: @user, url: password_reset_path(params[:id]), local: true) do |f| %>
+<%= render 'shared/error_messages'%>
+
+  <%= hidden_field_tag :email, @user.email %>
+
+  <%= f.label :password, class: "form_label" %>
+  <%= f.password_field :password, class: "form_control" %>
+
+  <%= f.label :password_confirmation, "パスワード確認", class: "form_label" %>
+  <%= f.password_field :password_confirmation, class: "form_control" %>
+
+
+  <%= f.submit "パスワードを更新する", class: "form_button" %>
+
+ <% end %>
+ </div>
