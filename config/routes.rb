@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+  get 'password_resets/edit'
   # root    "microposts#new"
   root     "homes#index"
   get      '/about' ,   to: 'homes#about'
@@ -10,5 +12,6 @@ Rails.application.routes.draw do
   delete   '/logout',   to: 'sessions#destroy'
   resources :users
   resources :account_activations, only: [:edit]
-  resources :microposts, only: [:create, :destroy]
+  resources :password_resets,     only: [:new, :edit, :create, :update]
+  resources :microposts,          only: [:create, :destroy]
 end
