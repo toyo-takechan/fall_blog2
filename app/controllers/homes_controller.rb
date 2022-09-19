@@ -13,4 +13,10 @@ class HomesController < ApplicationController
   def about
   end
 
+  def omikuji
+  end
+
+  def calendar
+  end
+
 end
